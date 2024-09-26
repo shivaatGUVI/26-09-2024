@@ -156,13 +156,95 @@
 // console.log(name, newObject);
 // console.log(city, newObject2);
 
-let arrayOne = [1, 2, 3, 4, 5];
+// let arrayOne = [1, 2, 3, 4, 5];
 
-let arrayTwo = [6, 7, 8, 9];
+// let arrayTwo = [6, 7, 8, 9];
 
-// [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// // [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-// spread - unbox
+// // spread - unbox
 
-let newArray = [...arrayOne, ...arrayTwo];
-console.log(newArray);
+// let newArray = [...arrayOne, ...arrayTwo];
+// console.log(newArray);
+
+// variables - [sayHelloArrow] | functions - [sayHello]
+
+// sayHello();
+
+// function sayHello() {
+//   console.log("Hello");
+// }
+
+// // heavy in operations / taking memory
+
+// sayHello();
+
+// // setTimeout(() => {}, 1000);
+
+// sayHelloArrow();
+
+// let sayHelloArrow = function () {
+//   console.log("Helloo");
+// };
+
+// setTimeout(sayHelloArrow, 1000);
+
+// function addNumber(paramOne, paramTwo) {
+//   console.log(paramOne, paramTwo);
+//   //   Array.map
+//   console.log(arguments);
+//   console.log(Object.values(arguments));
+// }
+
+// addNumber(2, 3, 4, 5, 6, 7, 0, 9, 9, 0, 0, 0);
+
+// let addNumberArrow = (paramOne, paramTwo, paramThree) => {
+//   console.log(paramOne, paramTwo, paramThree);
+// };
+
+// addNumberArrow(2, 3, 4, 7, 8, 9, 90);
+
+// variables - [name="GUVI"] | functions - [sayName - [variables - [name="Shiva"] | functions - []] ] | block - []
+
+// let name = "GUVI";
+// // let name = "Shiva";
+
+// // for (let a = 0; a < navigator; a++) {
+// //   //peice of code | block of code
+// // }
+
+// function sayName() {
+//   console.log(myName);
+//   var myName = "Shiva";
+//   console.log(myName);
+// }
+
+// sayName();
+
+// console.log(name);
+
+// console.log(myName);
+
+// variables - [age] | functions - [ variables -[] | functions - []] | block - [abc - variables -[myAge]]
+// Global, local, function, block
+
+let age = 50;
+
+// closures -> a function defined inside of a function - the inside is kept private
+
+function father() {
+  let myAge = 90;
+  console.log(myAge);
+
+  function sayHello() {
+    console.log("Hello");
+  }
+
+  let abc = () => {
+    console.log("hello");
+  };
+}
+
+console.log(age);
+sayHello();
+abc();
